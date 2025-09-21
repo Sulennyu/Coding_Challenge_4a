@@ -9,7 +9,7 @@ const products = [
     {name:"earrings", category:"jewelry",price:10.00,inventory:15}
 ];
 
-console.log("Product List Before Discount");
+console.log("Product List Before Discount:");
 
 products.forEach(obj =>console.log(`Name: ${obj.name} | Category: ${obj.category} | Price: $${obj.price} | Inventory: ${obj.inventory}`) );
 
@@ -37,7 +37,7 @@ for(let product of products) {
    
 }
 
-console.log("\nProduct List After Discount");
+console.log("\nProduct List After Discount:");
 
 products.forEach(obj =>console.log(`Name: ${obj.name} | Category: ${obj.category} | Price: $${obj.price} | Inventory: ${obj.inventory}`) );
 
@@ -73,14 +73,14 @@ for (let i = 1 ; i <= 3; i++) {
 
 // Step 6: Log Each key/value pair
 
-console.log("\nSingle Product After Checkout")
+console.log("\nSingle Product After Checkout:")
 for (let key in products[0]) {
     console.log(`${key}: ${products[0][key]}`);
 }
 
 // Step 7: All Product Info Destructuring
 
-console.log(`\n All Product Information After Checkout`)
+console.log(`\n All Product Information After Checkout:`)
 
 for (let product of products) {
     for (let [key,value] of Object.entries(product)) {
